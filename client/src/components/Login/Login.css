@@ -1,0 +1,100 @@
+.container {
+  font-family: "Poppins", sans-serif;
+}
+.height-100 {
+  height: 600px;
+}
+
+.sidebar {
+  position: relative;
+  overflow: hidden;
+}
+
+.chart-design {
+  list-style: none;
+}
+
+.form-data {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.main-heading {
+  font-size: 28px;
+  text-align: center;
+}
+
+.form-data label {
+  font-size: 13px;
+  margin-left: 2px;
+}
+
+.form-data input {
+  height: 50px;
+  border: 2px solid #eee;
+  transition: all 1s;
+  border-radius: 5px;
+}
+
+.form-data input:focus {
+  outline: none;
+  border: 2px solid #000;
+  box-shadow: none;
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+}
+
+.social-list li {
+  width: 110px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  color: #fff;
+}
+
+.forgot-text {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all ease-in-out .2s;
+}
+.forgot-text:hover {
+  background-color: rgb(0 67 189 / 52%);
+  font-size: 1.01rem;
+  color: white !important;
+  border-radius: 5px;
+}
+
+.signin-btn .btn {
+  width: 100%;
+  height: 46px;
+  margin-top: 10px;
+}
+
+.form-img {
+  background-image: url("imagen2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  vertical-align: center;
+  display: inline-block;
+}
+
+.crea-cuenta {
+  cursor: pointer;
+  transition: all ease-in-out .2s;
+
+}
+.crea-cuenta:hover {
+  background-color: rgb(0 67 189 / 52%);
+  font-size: 1.01rem;
+  color: #eee !important;
+  border-radius: 5px;
+  padding: 2px;
+}
+

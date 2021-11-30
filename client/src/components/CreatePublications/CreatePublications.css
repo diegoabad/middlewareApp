@@ -1,0 +1,27 @@
+.user {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+.perror {
+    color: #cc0033;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 30px;
+}
+.gerror {
+  color: #13e224;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 15px;
+  margin-bottom: 30px;
+}
+.notext {
+  color: transparent
+}

@@ -1,0 +1,249 @@
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+	padding: 20px 20px;
+	grid-gap: 20px 0;
+	justify-items: center;
+}
+
+.link {
+	text-decoration: none;
+}
+
+.card {
+	position: relative;
+	display: flex;
+	padding: 0 15px;
+	box-shadow: 0px 0px 5px 1px rgba(71, 70, 70, 0.438);
+	height: 200px;
+	width: 600px;
+	border-radius: 5px;
+	align-items: center;
+	justify-content: start;
+	color: rgb(68, 64, 64);
+	background-color: rgba(255, 255, 255, 0.938);
+	cursor: pointer;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	transition: 0.4s;
+}
+
+.card_container_logo {
+	width: 250px;
+	height: 180px;
+	margin-right: 20px;
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.164);
+	border-radius: 10px;
+}
+
+.card_logo {
+	width: 100%;
+	height: 180px;
+	border-radius: 10px;
+}
+
+.card_container_info_extra div svg {
+	width: 20px;
+}
+
+.card_container_info {
+	text-transform: capitalize;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 140px;
+}
+
+.card_container_info h3 {
+	font-weight: 700;
+	margin: 0 0 5px;
+	letter-spacing: 1px;
+}
+
+.card_container_info_extra {
+	display: flex;
+	flex-direction: column;
+}
+
+.card_container_info_extra_general {
+	display: flex;
+	align-items: center;
+}
+
+.card_container_info_extra_company {
+	margin-bottom: 10px;
+}
+
+.card_container_info_extra_city,
+.card_container_info_extra_salary {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	margin-right: 10px;
+}
+
+.card_container_info_extra_salary {
+	padding-left: 10px;
+}
+
+.card_container_info_extra_city p,
+.card_container_info_extra_salary p {
+	margin: 0 0 0 5px;
+}
+
+.card_container_info_extra_salary .salary {
+	font-weight: 700;
+}
+
+/* .cardPremium {
+	border: 4px solid rgba(216, 184, 2, 0.767);
+}
+
+.cardDefault {
+  border: 4px solid rgb(161, 160, 160);
+} */
+
+.premium {
+	text-transform: capitalize;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: rgb(240, 185, 6);
+	color: white;
+	font-weight: 500;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin: 0;
+	font-size: 18px;
+}
+.standard {
+	text-transform: capitalize;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: rgb(161, 160, 160);
+	color: white;
+	font-weight: 500;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin: 0;
+	font-size: 18px;
+}
+
+i {
+	margin-right: 4px;
+}
+
+.country {
+	text-transform: capitalize;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	background-color: rgba(17, 14, 221, 0.699);
+	color: white;
+	font-weight: 500;
+	padding: 5px 10px;
+	border-radius: 20px;
+	margin: 0;
+	font-size: 14px;
+}
+
+.country2 {
+	text-transform: capitalize;
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	background-color: rgba(255, 8, 123, 0.774);
+	color: white;
+	font-weight: 500;
+	padding: 5px 10px;
+	border-radius: 20px;
+	margin: 0;
+	font-size: 14px;
+}
+
+.date {
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
+	font-size: 12px;
+	margin: 0;
+}
+
+.textNone {
+	text-transform: none;
+}
+
+@media screen and (max-width: 700px) {
+	.cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(80vw, 1fr));
+		padding: 20px 20px;
+		grid-gap: 20px 0;
+		justify-items: start;
+		align-items: center;
+		align-self: center;
+	}
+
+	.card_container_info {
+		align-items: center;
+		justify-content: center;
+		height: 140px;
+	}
+
+	.card {
+		height: 450px;
+		width: 90vw;
+		padding: 10px;
+		justify-content: start;
+		flex-direction: column;
+	}
+
+	.card_container_logo {
+		width: 100%;
+		max-width: 300px;
+		margin: 0 0 40px;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		box-shadow: none;
+	}
+
+	.card_logo {
+		max-width: 300px;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.card_container_info_extra_general {
+		flex-direction: column;
+	}
+
+	.card_container_info h3 {
+		font-size: 35px;
+		margin: 0px 0 10px;
+	}
+
+	.card_container_info_extra_city,
+	.card_container_info_extra_salary {
+		margin: 5px 0 10px;
+	}
+
+	.country {
+		top: 0px;
+		right: 0px;
+		border-radius: 5px;
+		background-color: rgb(73, 71, 216);
+	}
+
+	.country2 {
+		top: 0px;
+		right: 0px;
+		border-radius: 5px;
+		background-color: rgb(224, 49, 131);
+	}
+	.card_container_info_extra_company {
+		margin-bottom: 5px;
+	}
+}

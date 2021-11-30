@@ -1,0 +1,73 @@
+/* News Cards CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif
+}
+
+.p {
+    width: 20rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card1 {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-column-gap: 25px;
+}
+
+.divCard2 {
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+}
+
+.card2 {
+    min-width: 350px;
+    height: 380px;
+    border-radius: 3rem;
+    background: #EEEEEE;
+    box-shadow: 8px 8px 18px #cacaca, -8px -8px 18px #ffffff;
+    border: none;
+    transition: all 0.4s;
+}
+
+.card2:hover {
+    box-shadow: 12px 12px 25px #cacaca, -12px -12px 25px #ffffff;
+}
+
+.neo {
+    color: #000;
+    border: none;
+    border-radius: 20%;
+    padding: 0.4rem;
+    cursor: default;
+    background: linear-gradient(145deg, #d6d6d6, #ffffff);
+    box-shadow: 0px 0px 5px #cacaca;
+}
+
+/* .neo:active {
+    border-radius: 50%;
+    background: linear-gradient(145deg, #d6d6d6, #ffffff);
+    box-shadow: inset 20px 20px 60px #cacaca, inset -20px -20px 60px #ffffff
+} */
+
+.span {
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.spanTecnologies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 18rem;
+    height: auto;
+    margin-left: 1.1rem;
+    position: relative;
+}
